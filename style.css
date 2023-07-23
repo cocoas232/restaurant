@@ -21,6 +21,14 @@ body{
     justify-content: center;
 }
 
+.nav-header-2{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+
+}
+
 
 .logo{
     margin-left: 165px;
@@ -77,6 +85,11 @@ body{
 
 .button:hover{
     background-color: #ff8c00;
+}
+
+.nav-img{
+    margin-left: 700px;
+    display: none;
 }
 
 .title{
@@ -191,7 +204,8 @@ body{
 .content-footer{
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    height: 20vh;
+    background-size: cover;
     padding-bottom: 300px;
     margin-top: 122px;
     display: flex;
@@ -281,7 +295,8 @@ body{
 .menu{
     background-image: url(images/Mask\ Group.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    height: 100vh;
+    background-size: cover;
     padding-bottom: 100px;
     margin-top: 150px;
     justify-items: center;
@@ -299,7 +314,17 @@ body{
 
 .menu-images{
     margin-left: 60px;
-    margin-top: 180px;
+    margin-top: 120px;
+}
+
+.menu-images-2{
+    margin-left: 60px;
+    margin-top: 120px;
+}
+
+.menu-images-3{
+    margin-left: 60px;
+    margin-top: 120px;
 }
 
 .feedback{
@@ -394,6 +419,20 @@ body{
     padding-bottom: 700px;
 }
 
+@media (max-width:1700px){
+    .item-header{
+        margin-left: 250px;
+    }
+}
+
+
+@media (max-width:1600px){
+    .item-header{
+        margin-left: 130px;
+    }
+}
+
+
 @media (max-width:1500px) {
     .item-header{
         margin-left: 200px;
@@ -409,7 +448,7 @@ body{
 }
 
 
-@media (max-width:1200px){
+@media (max-width:1400px){
     .item-header{
         margin-left: 80px;
     }
@@ -425,7 +464,212 @@ body{
     .item-nav{
         margin-left: 20px;
     }
+
+    .intro-img{
+        margin-left: 75px;
+    }
+
+    .text-history{
+        font-size: 36px;
+    }
+
+    .text-content{
+        font-size: 18px;
+    }
+
+    .number-content{
+        font-size: 30px;
+        margin-left: 43px;
+    }
+
+    .description{
+        font-size: 14px;
+        margin-left: 43px;
+    }
+
+    .button3{
+        margin-left: 250px;
+    }
+
+    .menu-images{
+        width: 300px;
+        height: 450px;
+    }
+
+    .menu-images-2{
+        width: 300px;
+        height: 450px;
+    }
+
+    .menu-images-3{
+        width: 300px;
+        height: 450px;
+    }
+
+
+
 }
+
+@media (max-width:1100px) {
+
+    .nav-img{
+        display: flex;
+    }
+
+    .item-header{
+        display: none;
+    }
+
+   .nav-header-2{
+    display: none;
+   }
+
+   .intro-img{
+    margin-left: 0px;
+    }
+
+    .content-foto{
+        display: none;
+    }
+
+    .content-history{
+        display: grid;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .content-footer{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .content-footer-text-1{
+        font-size: 46px;
+    }
+
+    .content-footer-text-2{
+        font-size: 16px;
+    }
+
+    .content-footer-button{
+        padding-top: 0px;
+        margin-left: 0px;
+    }
+
+    .button3{
+        margin-left: 0px;
+    }
+
+    .dishes-img{
+        display: none;
+    }
+
+    .dishes-images{
+        margin-top: 0px;
+    }
+
+    .menu-text{
+        padding-top: 0px;
+    }
+
+    
+
+
+
+}
+
+@media (max-width:900px) {
+    .nav-img{
+        margin-left: 450px;
+    }
+
+    .title-item{
+        font-size: 36px;
+    }
+
+    .title-item-2{
+        font-size: 56px;
+    }
+
+    .intro-img{
+        margin-top: 0px;
+    }
+
+    .intro{
+        display: grid;
+        justify-content: center;
+        
+    }
+
+    .dishes-group-text{
+        font-size: 16px;
+    }
+
+    .dishes-group-img-text-1{
+        margin-left: 0px;
+    }
+
+    .menu-images-2{
+        display: none;
+    }
+
+    .menu-images-3{
+        display: none;
+    }
+
+    .menu-images{
+        display: grid;
+        justify-items: center;
+        width: auto;
+        height: 550px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .nav-img{
+        margin-left: 200px;
+    }
+
+    .logo{
+        margin-left: 0px;
+    }
+
+    .text-history{
+        font-size: 34px;
+    }
+
+    .content-footer-text-1{
+        font-size: 36px;
+    }
+
+    .feedback-text{
+        font-size: 16px;
+    }
+
+    .feedback{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .gallery{
+        display: none;
+    }
+
+    .chef-images{
+        margin-left: 0px;
+    }
+
+    .chef-img{
+        display: grid;
+        justify-items: center;
+    }
+}
+
 
 
 
