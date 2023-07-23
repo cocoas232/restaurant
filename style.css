@@ -1,19 +1,23 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(images/HERO\ IMG.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Tinos', serif;
 }
 
+.header{
+    background-image: url(images/HERO\ IMG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 .nav{
     display: flex;
     align-items: center;
-    margin-top: 25px;
     font-family: 'Open Sans', sans-serif;
+    padding-top: 25px;
 }
 
 
@@ -116,15 +120,19 @@ body{
 }
 
 .intro{
-    margin-top: 224px;
+    margin-top: -150px;
     display: flex;
-    margin-left: 450px;
+    justify-content: center;
+}
+
+.intro-img{
+    margin-left: 150px;
 }
 
 .content{
     font-family: 'Tinos', serif;
     display: flex;
-    margin-left: 316px;
+    justify-content: center;
 }
 
 .text-history{
@@ -227,10 +235,14 @@ body{
     padding-top: 200px;
 }
 
+.dishes{
+    display: grid;
+    justify-items: center;
+}
+
 .dishes-heading{
     display: flex;
     font-size: 54px;
-    margin-left: 815px;
 }
 
 .dishes-text{
@@ -256,7 +268,6 @@ body{
 
 .dishes-images{
     display: flex;
-    margin-left: 365px;
     margin-top: 139px;
 }
 
@@ -271,17 +282,17 @@ body{
     background-size: 100%;
     padding-bottom: 100px;
     margin-top: 150px;
+    justify-items: center;
+    display: grid;
 }
 
 .menu-text{
-    text-align: center;
     padding-top: 100px;
     font-size: 54px;
 }
 
 .menu-img{
     display: flex;
-    margin-left: 180px;
 }
 
 .menu-images{
@@ -293,6 +304,8 @@ body{
     background-color: #E5E5E5;
     padding-top: 100px;
     padding-bottom: 50px;
+    display: grid;
+    justify-items: center;
 }
 
 .feedback-text{
@@ -301,9 +314,6 @@ body{
     font-size: 30px;
 }
 
-.feedback-img{
-    margin-left: 885px;
-}
 
 .feedback-visitor{
     text-align: center;
@@ -321,7 +331,6 @@ body{
 .gallery-text{
     display: flex;
     font-size: 54px;
-    margin-left: 760px;
 }
 
 .gallery-text-1{
@@ -341,8 +350,9 @@ body{
     display: flex;
 }
 
-.gallery-img{
-    margin-left: 350px;
+.gallery{
+    display: grid;
+    justify-items: center;
 }
 
 .gallery-images-group{
@@ -350,9 +360,13 @@ body{
     margin-top: 30px;
 }
 
+.chef{
+    display: grid;
+    justify-items: center;
+}
+
 .chef-text{
     display: flex;
-    margin-left: 800px;
     font-size: 54px;
 }
 
@@ -362,11 +376,9 @@ body{
 
 .chef-text-2{
     color: #D67E34;
+    margin-left: 20px;
 }
 
-.chef-img{
-    margin-left: 350px;
-}
 
 .chef-images{
     margin-left: 30px;
@@ -379,3 +391,39 @@ body{
     background-repeat: no-repeat;
     padding-bottom: 700px;
 }
+
+@media (max-width:1500px) {
+    .item-header{
+        margin-left: 200px;
+    }
+
+    .button{
+        margin-left: 50px;
+    }
+
+    .logo{
+        margin-left: 100px;
+    }
+}
+
+
+@media (max-width:1200px){
+    .item-header{
+        margin-left: 80px;
+    }
+
+    .button{
+        margin-left: 25px;
+    }
+
+    .logo{
+        margin-left: 50px;
+    }
+
+    .item-nav{
+        margin-left: 20px;
+    }
+}
+
+
+
